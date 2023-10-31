@@ -36,9 +36,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Choice 1" backgroundImage="choice1background">
+                                        <state key="normal" title="Choice1" backgroundImage="choice1background">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZb-9C-00T"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alt-mB-xXw" userLabel="Choice 2 Button">
                                         <rect key="frame" x="0.0" y="659" width="361" height="100"/>
@@ -47,9 +50,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Choice 2" backgroundImage="choice2background">
+                                        <state key="normal" title="Choice2" backgroundImage="choice2background">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Sz-ZD-zXI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -63,6 +69,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Iha-OO-BN9" secondAttribute="bottom" id="cGr-Dt-uRJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="nzc-3E-GHy" id="1YE-8z-8c0"/>
+                        <outlet property="choice2Button" destination="Alt-mB-xXw" id="ER6-zI-QEn"/>
+                        <outlet property="storyText" destination="Mvr-Ve-TFQ" id="qqG-O7-YHe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +85,7 @@
         <image name="choice1background" width="1370.6666259765625" height="363"/>
         <image name="choice2background" width="1370.6666259765625" height="363"/>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
